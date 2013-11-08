@@ -23,6 +23,9 @@ set backspace=indent,eol,start
 set autoindent
 set smartindent
 set smarttab
+setlocal formatoptions-=r
+setlocal formatoptions-=o
+autocmd FileType * setlocal formatoptions-=ro "disable auto comment
 
 "insert mode
 inoremap <C-e> <END>
