@@ -2,6 +2,7 @@
 ~~~~~~
 cd
 git clone https://github.com/anjn/vimrc.git .vim
+git submodule update --init --recursive
 ln -s .vim/vimrc .vimrc
 ~~~~~~
 
