@@ -16,4 +16,6 @@ set scrolloff=5
 set showcmd
 set ruler
 set number
+set cmdheight=1
 
+syntax on
