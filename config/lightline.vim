@@ -10,12 +10,14 @@ let g:lightline = {
       \ }
 
 "display
-colorscheme jellybeans
+"colorscheme jellybeans
+colorscheme delek
 set wildmenu
 set scrolloff=5
 set showcmd
 set ruler
 set number
 set cmdheight=1
+set cursorline
 
 syntax on

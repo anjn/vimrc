@@ -4,8 +4,12 @@ set autoread
 set noswapfile
 set hidden
 set browsedir=buffer
-set mouse=a
 set whichwrap=b,s,h,l,<,>,[,]
+
+"mouse
+set mouse=a
+set guioptions+=a
+set ttymouse=xterm2
 
 "cd
 augroup group_vimrc_cd
@@ -20,12 +24,16 @@ set fileformats=unix,dos,mac
 
 "edit
 set backspace=indent,eol,start
-set autoindent
-set smartindent
 set smarttab
 setlocal formatoptions-=r
 setlocal formatoptions-=o
 autocmd FileType * setlocal formatoptions-=ro "disable auto comment
+
+""indent
+set cindent
+set cinoptions=g0,(0
+"(0,u0
+"g0,(0,W4
 
 "insert mode
 inoremap <C-e> <END>
@@ -48,7 +56,38 @@ set expandtab
 set incsearch
 set ignorecase
 set smartcase
+"nmap <ESC><ESC> ;nohlsearch<CR><ESC>
 
 "dir
 let g:netrw_liststyle=3
 
+"cursor
+augroup vimrc-auto-cursorline
+  autocmd!
+  autocmd CursorMoved,CursorMovedI * call Auto_cursorline('CursorMoved')
+  autocmd CursorHold,CursorHoldI * call Auto_cursorline('CursorHold')
+  autocmd WinEnter * call Auto_cursorline('WinEnter')
+  autocmd WinLeave * call Auto_cursorline('WinLeave')
+
+  let g:cursorline_lock = 0
+  function! Auto_cursorline(event)
+    if a:event ==# 'WinEnter'
+      setlocal cursorline
+      let g:cursorline_lock = 2
+    elseif a:event ==# 'WinLeave'
+      setlocal nocursorline
+    elseif a:event ==# 'CursorMoved'
+      if g:cursorline_lock
+        if 1 < g:cursorline_lock
+          let g:cursorline_lock = 1
+        else
+          setlocal nocursorline
+          let g:cursorline_lock = 0
+        endif
+      endif
+    elseif a:event ==# 'CursorHold'
+      setlocal cursorline
+      let g:cursorline_lock = 1
+    endif
+  endfunction
+augroup END
