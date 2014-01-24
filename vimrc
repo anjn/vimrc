@@ -11,7 +11,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+  \     'windows' : 'make -f make_mingw32.mak',
+  \     'cygwin' : 'make -f make_cygwin.mak',
+  \     'mac' : 'make -f make_mac.mak',
+  \     'unix' : 'make -f make_unix.mak',
+  \    },
+  \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/neosnippet.vim'
@@ -46,8 +53,10 @@ NeoBundle 'YankRing.vim'
 set clipboard+=unnamedplus,unnamed
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'verilog_emacsauto.vim'
+NeoBundle 'bufkill.vim'  " :BD
 
 "util
+NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'troydm/easybuffer.vim'
 NeoBundle 'thinca/vim-ref'
 let g:ref_open = 'vsplit'
@@ -60,6 +69,9 @@ NeoBundle 'itchyny/lightline.vim'
 "colorscheme
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'w0ng/vim-hybrid'
+
+"tool
+NeoBundle 'tpope/vim-fugitive'
 
 filetype plugin indent on     " Required!
 "
