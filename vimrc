@@ -54,9 +54,11 @@ set clipboard+=unnamedplus,unnamed
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'verilog_emacsauto.vim'
 NeoBundle 'bufkill.vim'  " :BD
+NeoBundle 'taku-o/vim-catn'
 
 "util
 NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'troydm/easybuffer.vim'
 NeoBundle 'thinca/vim-ref'
 let g:ref_open = 'vsplit'

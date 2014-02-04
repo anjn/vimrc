@@ -6,6 +6,20 @@ set hidden
 set browsedir=buffer
 set whichwrap=b,s,h,l,<,>,[,]
 
+"display
+"colorscheme jellybeans
+colorscheme delek
+set wildmenu
+set wildmode=longest:full,full
+set scrolloff=5
+set showcmd
+set ruler
+set number
+set cmdheight=1
+set cursorline
+
+syntax on
+
 "mouse
 set mouse=a
 set guioptions+=a
