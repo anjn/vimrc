@@ -42,6 +42,7 @@ set smarttab
 setlocal formatoptions-=r
 setlocal formatoptions-=o
 autocmd FileType * setlocal formatoptions-=ro "disable auto comment
+source $VIMRUNTIME/macros/matchit.vim "for begin/end
 
 ""indent
 set cindent
