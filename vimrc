@@ -21,7 +21,8 @@ NeoBundle 'Shougo/vimproc', {
   \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache.vim'
-NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 " <TAB>: completion.
 " inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
@@ -57,8 +58,8 @@ NeoBundle 'bufkill.vim'  " :BD
 NeoBundle 'taku-o/vim-catn'
 
 "util
-NeoBundle 'Shougo/vimshell.vim'
-NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/vimfiler'
 NeoBundle 'troydm/easybuffer.vim'
 NeoBundle 'thinca/vim-ref'
 let g:ref_open = 'vsplit'
