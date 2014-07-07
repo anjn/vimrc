@@ -25,11 +25,11 @@ set mouse=a
 set guioptions+=a
 set ttymouse=xterm2
 
-"cd
-augroup group_vimrc_cd
-  autocmd!
-  autocmd BufEnter * execute ":lcd " . (isdirectory(expand("%:p:h")) ? expand("%:p:h") : "")
-augroup END
+""cd
+"augroup group_vimrc_cd
+"  autocmd!
+"  autocmd BufEnter * execute ":lcd " . (isdirectory(expand("%:p:h")) ? expand("%:p:h") : "")
+"augroup END
 
 "encoding
 set encoding=utf-8
@@ -47,6 +47,7 @@ source $VIMRUNTIME/macros/matchit.vim "for begin/end
 ""indent
 set cindent
 set cinoptions=g0,(0
+set cino=N-s
 "(0,u0
 "g0,(0,W4
 

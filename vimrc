@@ -56,6 +56,7 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'verilog_emacsauto.vim'
 NeoBundle 'bufkill.vim'  " :BD
 NeoBundle 'taku-o/vim-catn'
+NeoBundle 'scrooloose/syntastic.git'
 
 "util
 NeoBundle 'Shougo/vimshell'
