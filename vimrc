@@ -51,6 +51,8 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 "edit
 NeoBundle 'Align'
 NeoBundle 'YankRing.vim'
+let g:yankring_history_dir = $HOME.'/.vim/'
+let g:yankring_history_file = '.yankring_history'
 set clipboard+=unnamedplus,unnamed
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'verilog_emacsauto.vim'
