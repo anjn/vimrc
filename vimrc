@@ -23,6 +23,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neomru.vim'
 " <TAB>: completion.
 " inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
@@ -54,6 +55,7 @@ NeoBundle 'YankRing.vim'
 let g:yankring_history_dir = $HOME.'/.vim/'
 let g:yankring_history_file = '.yankring_history'
 set clipboard+=unnamedplus,unnamed
+NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'verilog_emacsauto.vim'
 NeoBundle 'bufkill.vim'  " :BD
