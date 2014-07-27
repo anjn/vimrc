@@ -81,6 +81,12 @@ NeoBundle 'w0ng/vim-hybrid'
 "tool
 NeoBundle 'tpope/vim-fugitive'
 
+"syntax
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'pekepeke/titanium-vim'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'tikhomirov/vim-glsl'
+
 filetype plugin indent on     " Required!
 "
 " Brief help
