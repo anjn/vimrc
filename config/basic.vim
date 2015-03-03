@@ -7,8 +7,11 @@ set browsedir=buffer
 set whichwrap=b,s,h,l,<,>,[,]
 
 "display
+"" white background
+autocmd ColorScheme * highlight Normal ctermbg=15 
 "colorscheme jellybeans
-colorscheme delek
+"colorscheme delek
+colorscheme Tomorrow
 set wildmenu
 set wildmode=longest:full,full
 set scrolloff=5
@@ -33,7 +36,8 @@ set ttymouse=xterm2
 
 "encoding
 set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencoding=japan
+set fileencodings=utf-8,iso-2022-jp,euc-jp,ucs-2le,ucs-2,cp932
 set fileformats=unix,dos,mac
 
 "edit

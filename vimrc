@@ -20,6 +20,7 @@ NeoBundle 'Shougo/vimproc', {
   \    },
   \ }
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
@@ -55,12 +56,30 @@ NeoBundle 'YankRing.vim'
 let g:yankring_history_dir = $HOME.'/.vim/'
 let g:yankring_history_file = '.yankring_history'
 set clipboard+=unnamedplus,unnamed
+NeoBundle 'm4i/YankRingSync'
 NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'verilog_emacsauto.vim'
 NeoBundle 'bufkill.vim'  " :BD
 NeoBundle 'taku-o/vim-catn'
 NeoBundle 'scrooloose/syntastic.git'
+
+"search
+NeoBundle 'haya14busa/incsearch.vim'
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+set hlsearch
+let g:incsearch#auto_nohlsearch = 1
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map *  <Plug>(incsearch-nohl-*)
+map #  <Plug>(incsearch-nohl-#)
+map g* <Plug>(incsearch-nohl-g*)
+map g# <Plug>(incsearch-nohl-g#)
+
+"syntax
+NeoBundle 'derekwyatt/vim-scala'
 
 "util
 NeoBundle 'Shougo/vimshell'
@@ -77,6 +96,7 @@ NeoBundle 'itchyny/lightline.vim'
 "colorscheme
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'chriskempson/vim-tomorrow-theme'
 
 "tool
 NeoBundle 'tpope/vim-fugitive'
