@@ -93,6 +93,7 @@ let g:ref_alc_start_linenumber = 35
 
 "display
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'Yggdroot/indentLine'
 
 "colorscheme
 NeoBundle 'nanotech/jellybeans.vim'
