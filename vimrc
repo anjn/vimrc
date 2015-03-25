@@ -100,8 +100,9 @@ NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 
-"tool
+"git
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'gregsexton/gitv'
 
 "syntax
 NeoBundle 'kchmck/vim-coffee-script'
