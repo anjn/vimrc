@@ -63,7 +63,7 @@ NeoBundle 'verilog_emacsauto.vim'
 NeoBundle 'bufkill.vim'  " :BD
 NeoBundle 'taku-o/vim-catn'
 NeoBundle 'scrooloose/syntastic.git'
-NeoBundle 'cohama/lexima.vim'
+"NeoBundle 'cohama/lexima.vim'
 
 "search
 NeoBundle 'haya14busa/incsearch.vim'
